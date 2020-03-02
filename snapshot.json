@@ -1,0 +1,23 @@
+{
+"s3_bucket": {
+"bucket_name": "client-test",
+"region": "ap-south-1"
+},
+"volume":{
+"volume_type": "gp2",
+"volume_size": "8",
+"availability_zone": "ap-south-1b"
+},
+"instance": {
+"instance_id": "i-006b2ab2019b1b06f",
+"device": "/dev/xvdf",
+"directory":"/snapshot-recovery"
+},
+"snapshot_in_s3": { 
+"snapshot_path": "s3://crimson-snapshot/vol-0b98a5d36a2492343/2019-09-11T08:33:28+00:00 snap-02618605c4f722664 - sai_test.1.tar.lz4"
+},
+"snapshot": {
+"description": "This is the root volume snapshot of test-server"
+}
+}
+
